@@ -63,7 +63,7 @@ header nav h1:hover {
 header nav form {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 65%;
     position: relative;
     transition: var(--transition);
 }
@@ -75,12 +75,12 @@ header nav form:focus-within {
 .searchbox {
     flex-grow: 1;
     margin-right: 10px;
-    height: 45px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: var(--border-radius);
     border: 2px solid transparent;
-    padding: 0 15px;
-    font-size: 1rem;
+    padding: 0 18px;
+    font-size: 1.05rem;
     transition: var(--transition);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
@@ -88,12 +88,13 @@ header nav form:focus-within {
 .searchbox:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.25);
+    transform: scale(1.02);
 }
 
 header nav form button {
-    height: 45px;
-    width: 100px;
+    height: 50px;
+    width: 110px;
     background: var(--gradient-warm);
     color: white;
     border-radius: var(--border-radius);
@@ -104,11 +105,12 @@ header nav form button {
     box-shadow: 0 4px 6px rgba(255, 107, 107, 0.3);
     position: relative;
     overflow: hidden;
+    font-size: 1rem;
 }
 
 header nav form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 7px 14px rgba(255, 107, 107, 0.4);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.45);
 }
 
 header nav form button:active {
@@ -682,6 +684,18 @@ section {
         max-width: 500px;
     }
     
+    .searchbox {
+        height: 48px;
+        font-size: 1rem;
+        padding: 0 16px;
+    }
+    
+    header nav form button {
+        height: 48px;
+        width: 90px;
+        font-size: 0.95rem;
+    }
+    
 
     .hero-section {
         padding: 40px 30px;
@@ -768,13 +782,14 @@ section {
     }
     
     .searchbox {
-        height: 40px;
-        font-size: 0.9rem;
+        height: 44px;
+        font-size: 0.95rem;
+        padding: 0 14px;
     }
     
     header nav form button {
-        height: 40px;
-        width: 80px;
+        height: 44px;
+        width: 85px;
         font-size: 0.9rem;
     }
     
